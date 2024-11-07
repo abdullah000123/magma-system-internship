@@ -1,0 +1,25 @@
+train : /root/workspace/object-detection/customfruit-data/train/images
+val:  /root/workspace/object-detection/customfruit-data/valid/images
+test:  /root/workspace/object-detection/customfruit-data/test/images
+
+nc : 3
+
+names: ['Apple','grapes','orange']
+
+# Mosaic and mixup
+mosaic: 1.0          # Probability of using mosaic augmentation
+mixup: 1.0          # Probability of using mixup augmentation
+weight_decay : 0.001
+dropout : 0.2
+patience : 20
+cso_lr : True
+# Augmentation settings
+degrees: 90.0        # Image rotation (+/- degrees)
+translate: 0.1       # Image translation (+/- fraction)
+scale: 0.5           # Image scaling (+/- gain)
+shear: 0.0           # Image shear (+/- degrees)
+flipud: 1.0         # Flip image up-down (0 or 1)
+fliplr: 1.0          # Flip image left-right (0 or 1)
+hsv_h: 0.015         # HSV hue augmentation (fraction)
+hsv_s: 0.7           # HSV saturation augmentation (fraction)
+hsv_v: 0.4           # HSV value augmentation (fraction)

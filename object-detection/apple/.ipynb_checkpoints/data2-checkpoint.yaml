@@ -1,0 +1,7 @@
+train: /root/workspace/object-detection/apple/appledata2/train/images
+val: /root/workspace/object-detection/apple/appledata2/valid/images
+test: /root/workspace/object-detection/apple/appledata2/test/images
+
+nc: 1
+names: ['Apple']
+

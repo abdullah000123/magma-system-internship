@@ -1,0 +1,21 @@
+train: /root/workspace/object-detection/apple/appledata2/train/images
+val: /root/workspace/object-detection/apple/appledata2/valid/images
+test: /root/workspace/object-detection/apple/appledata2/test/images
+
+nc: 1
+names: ['Apple']
+
+# Mosaic and mixup
+mosaic: 1.0          # Probability of using mosaic augmentation
+mixup: 1.0          # Probability of using mixup augmentation
+
+# Augmentation settings
+degrees: 20.0        # Image rotation (+/- degrees)
+translate: 0.1       # Image translation (+/- fraction)
+scale: 0.5           # Image scaling (+/- gain)
+shear: 0.0           # Image shear (+/- degrees)
+flipud: 0.5          # Flip image up-down (0 or 1)
+fliplr: 0.5          # Flip image left-right (0 or 1)
+hsv_h: 0.015         # HSV hue augmentation (fraction)
+hsv_s: 0.7           # HSV saturation augmentation (fraction)
+hsv_v: 0.4           # HSV value augmentation (fraction)

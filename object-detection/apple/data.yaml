@@ -1,0 +1,13 @@
+train: /root/workspace/object-detection/apple/train/images
+val: /root/workspace/object-detection/apple/valid/images
+test: /root/workspace/object-detection/apple/test/images
+
+nc: 1
+names: ['apple']
+
+roboflow:
+  workspace: dimitra-el1gk
+  project: apple-detection-v2
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/dimitra-el1gk/apple-detection-v2/dataset/1
